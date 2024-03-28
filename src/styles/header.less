@@ -1,0 +1,42 @@
+@import 'variables.less';
+
+header {
+    margin: 0;
+    padding: 0 1em;
+    background: @c1-300;
+    box-shadow: 0 2px 10px 5px rgb(0 0 0 / 30%)
+}
+h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+h2 a,
+h2 a.active {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    padding: 1em 0.5em;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+}
+nav a.active {
+    text-decoration: none !important;
+    border-bottom-color: @accent;
+}
+.social-links,
+.social-links a {
+    display: flex;
+    padding: 0;
+}
+@media (max-width: 720px) {
+    .social-links {
+        display: none;
+    }
+}
